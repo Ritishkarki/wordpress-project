@@ -68,13 +68,14 @@ header{
 @media (min-width:767px) {
     .slide{
         .slide-content{
-            background:rgba(255, 255, 255, .8);
+            background:rgba(255, 255, 255, .5);
             left:100px;
-            top:70%;
-            height:70%;
+            top:auto;
+            bottom:100px;
+            height:auto;
             min-width:auto;
             max-width:400px;
-            transform: translate(0, -70%);
+            transform: none;
             display:flex;
             flex-direction: column;
             flex-wrap: wrap;
