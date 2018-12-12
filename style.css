@@ -2413,6 +2413,9 @@ header .site-bar .nav {
   transform: scale(1.01);
 }
 
+.entry-featured img {
+  width: 100%;
+}
 .entry-author-time {
   text-align: center;
 }

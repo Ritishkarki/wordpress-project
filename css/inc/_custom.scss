@@ -62,8 +62,16 @@ header {
 }
 
 // custom blog styles
-.entry-author-time {
-    text-align: center;
+.entry {
+    &-featured {
+        img {
+            width: 100%;
+        }
+    }
+
+    &-author-time {
+        text-align: center;
+    }
 }
 
 // custom media query styles
