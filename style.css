@@ -2428,11 +2428,19 @@ header .site-bar .nav {
   }
 }
 @media (min-width: 767px) {
-  .slide .slide-content {
+  .slick-slider {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .slick-slider .slide {
+    height: 100%;
+    max-height: 400px;
+  }
+  .slick-slider .slide .slide-content {
     background: rgba(255, 255, 255, 0.5);
     left: 100px;
-    top: auto;
-    bottom: 100px;
+    top: 100px;
+    bottom: auto;
     height: auto;
     min-width: auto;
     max-width: 400px;
@@ -2444,7 +2452,7 @@ header .site-bar .nav {
     justify-content: center;
     padding: 30px;
   }
-  .slide img {
+  .slick-slider .slide img {
     height: 100%;
     width: 100%;
     object-fit: cover;
