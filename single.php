@@ -52,7 +52,7 @@
 								<?php
 									$prev_post = get_previous_post();
 									$next_post = get_next_post();
-								?>
+									?>
 								<?php if( ! empty( $next_post ) ): ?>
 									<a href="<?php echo esc_url( get_permalink( $next_post ) ); ?>" class="paging-standard paging-older"><?php esc_html_e( 'Previous Post', 'olsen-light' ); ?></a>
 								<?php endif; ?>
@@ -60,11 +60,12 @@
 									<a href="<?php echo esc_url( get_permalink( $prev_post ) ); ?>" class="paging-standard paging-newer"><?php esc_html_e( 'Next Post', 'olsen-light' ); ?></a>
 								<?php endif; ?>
 							</div>
-
+							<?php 
+							global $wp;
+							$url = home_url( $wp->request );
+							?>
 							<?php get_template_part( 'part', 'related' ); ?>
-
-							<?php comments_template(); ?>
-
+							<?php echo do_shortcode(`[wpdevart_facebook_comment curent_url=$url order_type="social" title_text="Share your thoughts by commenting below" title_text_color="#000000" title_text_font_size="25" title_text_font_famely="monospace" title_text_position="left" width="100%" bg_color="#d4d4d4" animation_effect="random" count_of_comments="100" ]`); ?>
 						</article>
 					<?php endwhile; ?>
 				</div>
