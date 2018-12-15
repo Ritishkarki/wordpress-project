@@ -65,7 +65,7 @@
 							$url = home_url( $wp->request );
 							?>
 							<?php get_template_part( 'part', 'related' ); ?>
-							<?php echo do_shortcode(`[wpdevart_facebook_comment curent_url=$url order_type="social" title_text="Share your thoughts by commenting below" title_text_color="#000000" title_text_font_size="25" title_text_font_famely="monospace" title_text_position="left" width="100%" bg_color="#d4d4d4" animation_effect="random" count_of_comments="100" ]`); ?>
+							<?php echo do_shortcode('[wpdevart_facebook_comment curent_url="http://developers.facebook.com/docs/plugins/comments/" order_type="social" title_text="Facebook Comment" title_text_color="#000000" title_text_font_size="22" title_text_font_famely="monospace" title_text_position="left" width="100%" bg_color="#d4d4d4" animation_effect="random" count_of_comments="3" ]'); ?>
 						</article>
 					<?php endwhile; ?>
 				</div>
