@@ -28,9 +28,9 @@
 						<h1 itemprop="name">
 							<a itemprop="url" href="<?php echo esc_url( home_url() ); ?>">
 								<?php if ( get_theme_mod( 'logo', get_template_directory_uri() . '/images/logo.png' ) ): ?>
-									<!-- <img itemprop="logo"
+									<img itemprop="logo"
 									     src="<?php echo esc_url( get_theme_mod( 'logo', get_template_directory_uri() . '/images/logo.png' ) ); ?>"
-									     alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"/> -->
+									     alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"/>
 								<?php else: ?>
 									<?php bloginfo( 'name' ); ?>
 								<?php endif; ?>
@@ -38,8 +38,9 @@
 						</h1>
 
 						<?php if ( get_bloginfo( 'description' ) ): ?>
-							<p class="tagline"><?php bloginfo( 'description' ); ?></p>
+							<h2 class="tagline"><?php bloginfo( 'description' ); ?></h2>
 						<?php endif; ?>
+						<?php include 'searchform.php';?>
 					</div><!-- /site-logo -->
 
 					<div class="site-bar group">

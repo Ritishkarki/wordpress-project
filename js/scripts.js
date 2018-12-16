@@ -119,6 +119,8 @@ jQuery(function( $ ) {
 		----------------------------------------- */
 		$equals.matchHeight();
 		$homeArticles.matchHeight();
-
+		$equals.resize(function() {
+			$.fn.matchHeight._update();
+		});
 	});
 });
