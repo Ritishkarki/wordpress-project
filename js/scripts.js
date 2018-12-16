@@ -117,10 +117,6 @@ jQuery(function( $ ) {
 		/* -----------------------------------------
 		Equalize Content area heights
 		----------------------------------------- */
-		$equals.matchHeight();
 		$homeArticles.matchHeight();
-		$equals.resize(function() {
-			$.fn.matchHeight._update();
-		});
 	});
 });

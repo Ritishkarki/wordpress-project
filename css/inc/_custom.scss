@@ -109,6 +109,14 @@ header {
 }
 
 @media (min-width:767px) {
+    .row-eq-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .slick-slider {
         max-height: 400px;
         overflow: hidden;
@@ -138,6 +146,24 @@ header {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+            }
+        }
+    }
+}
+
+//for tablets and mobile devices 
+@media (max-width:766px) {
+    header {
+        .site-logo {
+            flex-wrap: wrap;
+
+            h1,
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            form {
+                width: 100%;
             }
         }
     }

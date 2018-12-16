@@ -15,7 +15,7 @@
 	$post_col          = $layout['post_col'];
 ?>
 
-<div class="row">
+<div class="row row-eq-height">
 	<div class="<?php echo esc_attr( $content_col ); ?>">
 		<main id="content" class="<?php echo esc_attr( $main_class ); ?>" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
@@ -27,13 +27,13 @@
 							global $wp_query;
 
 							$found = $wp_query->found_posts;
-							$none  = esc_html__( 'No results found. Please broaden your terms and search again.', 'olsen-light' );
-							$one   = esc_html__( 'Just one result found. We either nailed it, or you might want to broaden your terms and search again.', 'olsen-light' );
-							$many  = esc_html( sprintf( _n( '%d result found.', '%d results found.', $found, 'olsen-light' ), $found ) );
+							$none  = esc_html__( 'No results found. Please broaden your terms and search again.');
+							$one   = esc_html__( 'Just one result found. We either nailed it, or you might want to broaden your terms and search again.');
+							$many  = esc_html( sprintf( _n( '%d result found.', '%d results found.', $found), $found ) );
 						?>
 						<article class="entry">
 							<h2 class="entry-title">
-								<?php esc_html_e( 'Search results' , 'olsen-light' ); ?>
+								<?php esc_html_e( 'Search results'); ?>
 							</h2>
 
 							<div class="entry-content" itemprop="text">

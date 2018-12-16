@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="row">
+<div class="row row-eq-height">
 	<div class="col-md-8 col-md-offset-2">
 		<main id="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 			<div class="row">

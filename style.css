@@ -2448,6 +2448,14 @@ header .site-bar .nav {
   }
 }
 @media (min-width: 767px) {
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .slick-slider {
     max-height: 400px;
     overflow: hidden;
@@ -2476,6 +2484,18 @@ header .site-bar .nav {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+}
+@media (max-width: 766px) {
+  header .site-logo {
+    flex-wrap: wrap;
+  }
+  header .site-logo h1,
+header .site-logo h2 {
+    margin-bottom: 15px;
+  }
+  header .site-logo form {
+    width: 100%;
   }
 }
 
