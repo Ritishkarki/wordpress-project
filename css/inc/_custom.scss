@@ -96,15 +96,21 @@ header {
 }
 
 // custom media query styles
-@media (min-width: 1700px) {
-    .container {
-        width: 1600px;
-    }
-}
+//for tablets and mobile devices 
+@media (max-width:766px) {
+    header {
+        .site-logo {
+            flex-wrap: wrap;
 
-@media (min-width: 1400px) {
-    .container {
-        width: 1367px;
+            h1,
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            form {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -151,20 +157,14 @@ header {
     }
 }
 
-//for tablets and mobile devices 
-@media (max-width:766px) {
-    header {
-        .site-logo {
-            flex-wrap: wrap;
+@media (min-width: 1400px) {
+    .container {
+        width: 1367px;
+    }
+}
 
-            h1,
-            h2 {
-                margin-bottom: 15px;
-            }
-
-            form {
-                width: 100%;
-            }
-        }
+@media (min-width: 1700px) {
+    .container {
+        width: 1600px;
     }
 }

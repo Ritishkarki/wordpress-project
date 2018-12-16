@@ -2437,14 +2437,16 @@ header .site-bar .nav {
   margin: 15px 0 0;
 }
 
-@media (min-width: 1700px) {
-  .container {
-    width: 1600px;
+@media (max-width: 766px) {
+  header .site-logo {
+    flex-wrap: wrap;
   }
-}
-@media (min-width: 1400px) {
-  .container {
-    width: 1367px;
+  header .site-logo h1,
+header .site-logo h2 {
+    margin-bottom: 15px;
+  }
+  header .site-logo form {
+    width: 100%;
   }
 }
 @media (min-width: 767px) {
@@ -2486,16 +2488,14 @@ header .site-bar .nav {
     object-fit: cover;
   }
 }
-@media (max-width: 766px) {
-  header .site-logo {
-    flex-wrap: wrap;
+@media (min-width: 1400px) {
+  .container {
+    width: 1367px;
   }
-  header .site-logo h1,
-header .site-logo h2 {
-    margin-bottom: 15px;
-  }
-  header .site-logo form {
-    width: 100%;
+}
+@media (min-width: 1700px) {
+  .container {
+    width: 1600px;
   }
 }
 
