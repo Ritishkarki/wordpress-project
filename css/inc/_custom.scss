@@ -20,6 +20,19 @@ header {
     .site-bar .nav {
         width: 100%;
     }
+
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        left: 0;
+        top: 0;
+        z-index: 9999999;
+    }
+}
+
+header+#site-content {
+    padding-top: 144px;
 }
 
 .homepage {
