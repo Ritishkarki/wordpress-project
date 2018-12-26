@@ -35,7 +35,8 @@
 								<?php get_template_part( 'part', 'social-sharing' ); ?>
 							</div>
 
-							<?php comments_template(); ?>
+							<h4 class="share-thoughts"> Share your thoughts in the comment below </h4>
+							<?php echo do_shortcode ('[gs-fb-comments]'); ?>
 
 						</article>
 					<?php endwhile; ?>

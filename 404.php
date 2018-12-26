@@ -8,11 +8,11 @@
 				<div class="col-md-12">
 					<article class="entry">
 						<h2 class="entry-title">
-							<?php esc_html_e( 'Page not found' , 'olsen-light' ); ?>
+							<?php esc_html_e( 'Page not found'); ?>
 						</h2>
 
 						<div class="entry-content">
-							<p><?php esc_html_e( 'The page you were looking for can not be found! Perhaps try searching?', 'olsen-light' ); ?></p>
+							<p><?php esc_html_e( 'The page you were looking for can not be found! Perhaps try searching?'); ?></p>
 							<?php get_search_form(); ?>
 						</div>
 					</article>

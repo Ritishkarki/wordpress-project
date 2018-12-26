@@ -68,7 +68,7 @@
 			</div>
 
 			<div class="entry-utils group">
-				<a href="<?php the_permalink(); ?>" class="read-more"><?php esc_html_e( 'Continue Reading', 'olsen-light' ); ?></a>
+				<a href="<?php the_permalink(); ?>" class="read-more"><?php esc_html_e( 'Continue Reading'); ?></a>
 
 				<?php get_template_part( 'part', 'social-sharing' ); ?>
 			</div>
@@ -83,3 +83,4 @@
 <?php if ( ! empty( $post_col ) ) : ?>
 	</div>
 <?php endif; ?>
+

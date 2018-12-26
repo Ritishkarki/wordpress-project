@@ -30,8 +30,6 @@
 								<?php get_template_part( 'part', 'social-sharing' ); ?>
 							</div>
 
-							<?php comments_template(); ?>
-
 						</article>
 					<?php endwhile; ?>
 
