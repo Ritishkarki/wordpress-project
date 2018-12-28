@@ -2449,6 +2449,15 @@ header + #site-content {
   margin: 15px 0 0;
 }
 
+.widget-title {
+  background: none;
+  border-bottom: 2px solid #000;
+  color: #000;
+  text-align: left;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
 @media (max-width: 766px) {
   header .site-logo {
     flex-wrap: wrap;
@@ -2468,6 +2477,16 @@ header .site-logo h2 {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .no-padding {
+    padding: 0;
+  }
+  .no-padding-right {
+    padding-right: 0;
+  }
+  .no-padding-left {
+    padding-left: 0;
   }
 
   .slick-slider {

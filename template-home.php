@@ -10,16 +10,16 @@
 
 	<div class="col-md-12">
 		<main role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-			<div class="row homepage">
+			<div class="row homepage row-eq-height">
                 <?php 
                     $the_query = new WP_Query( array(
                         'posts_per_page' => 6,
                     )); 
                 ?>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-6 no-padding">
 					<!-- slider -->
 					<?php get_template_part( 'part', 'slider' ); ?>
 					<h1 class="homepage-headliner"> Latest posts </h1>
@@ -57,7 +57,7 @@
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<?php get_sidebar(); ?>
 				</div>
 			</div>

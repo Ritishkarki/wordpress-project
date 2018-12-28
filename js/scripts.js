@@ -112,7 +112,7 @@ jQuery(function( $ ) {
 
 	$window.load(function() {
 		var $equals = $("#site-content > .row > div[class^='col']");
-		var $homeArticles = $("#site-content > .row .home-page-article");
+		var $homeArticles = $("#site-content > .row article");
 
 		/* -----------------------------------------
 		Equalize Content area heights
