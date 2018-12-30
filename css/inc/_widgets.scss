@@ -405,7 +405,8 @@
 			border-bottom: solid 1px #ececec;			
 
 			&:last-child {
-				margin-bottom: 0;								
+				margin-bottom: 0;
+				border-bottom: none;								
 			}
 		}
 

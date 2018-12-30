@@ -488,3 +488,28 @@ function get_estimated_reading_time( $content = '', $wpm = 300 ) {
 	}
 	return $time.' minute read';
 }
+// adding custom sidebar for theme
+function wpb_widgets_init() {
+ 
+    register_sidebar( array(
+        'name' => __( 'Home Left Sidebar', 'wpb' ),
+        'id' => 'sidebar-left',
+        'description' => __( 'Home Page Left Sidebar', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+    register_sidebar( array(
+        'name' =>__( 'Home Right sidebar', 'wpb'),
+        'id' => 'sidebar-right',
+        'description' => __( 'HomePage Right Sidebar', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+    }
+ 
+add_action( 'widgets_init', 'wpb_widgets_init' );
