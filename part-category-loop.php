@@ -67,10 +67,10 @@
                                                 <i class="fa fa-clock-o" aria-hidden="true"></i> 
                                                 <?php echo get_estimated_reading_time(get_the_content());?> by <?php the_author();?>
                                             </div>
+                                            <div class="article-content">
+                                                <?php the_excerpt(); ?> 
+                                            </div>
                                         <?php if($isDeck) echo '</div>' ?>
-                                        <div class="article-content">
-                                            <?php the_excerpt(); ?> 
-                                        </div>
                                     </article>
                                 </li>
                             <?php endwhile; ?>

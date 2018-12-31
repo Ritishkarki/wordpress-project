@@ -1,4 +1,8 @@
 //custom styles
+html {
+    margin-top: 0 !important;
+}
+
 header {
     .site-logo {
         display: flex;
@@ -36,7 +40,7 @@ header {
 }
 
 header+#site-content {
-    padding-top: 180px;
+    padding-top: 200px;
 }
 
 .homepage {
@@ -252,17 +256,56 @@ header+#site-content {
 // custom media query styles
 //for tablets and mobile devices 
 @media (max-width:766px) {
+    header+#site-content {
+        padding-top: 300px;
+    }
+
     header {
         .site-logo {
             flex-wrap: wrap;
 
             h1,
             h2 {
-                margin-bottom: 15px;
+                margin: 0 0 15px;
+                width: 100%;
+                text-align: center;
             }
 
             form {
                 width: 100%;
+            }
+        }
+    }
+
+    .homepage {
+        div[class^="col-"] {
+            margin-top: 15px;
+        }
+    }
+
+    .deck-cards {
+        .posts-deck {
+            flex-wrap: wrap;
+        }
+
+        .featured {
+            width: 100% !important;
+            margin-bottom: 15px;
+        }
+
+        .deck-list {
+            width: 100% !important;
+            padding: 0;
+        }
+    }
+
+    .three-cards {
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                width: 100% !important;
+                margin-bottom: 15px;
             }
         }
     }
