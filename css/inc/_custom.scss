@@ -1,4 +1,8 @@
 //custom styles
+html {
+    margin-top: 0 !important;
+}
+
 header {
     .site-logo {
         display: flex;
@@ -36,7 +40,7 @@ header {
 }
 
 header+#site-content {
-    padding-top: 180px;
+    padding-top: 200px;
 }
 
 .homepage {
@@ -263,6 +267,33 @@ header+#site-content {
 
             form {
                 width: 100%;
+            }
+        }
+    }
+
+    .deck-cards {
+        .posts-deck {
+            flex-wrap: wrap;
+        }
+
+        .featured {
+            width: 100% !important;
+            margin-bottom: 15px;
+        }
+
+        .deck-list {
+            width: 100% !important;
+            padding: 0;
+        }
+    }
+
+    .three-cards {
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                width: 100% !important;
+                margin-bottom: 15px;
             }
         }
     }

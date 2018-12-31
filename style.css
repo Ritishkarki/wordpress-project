@@ -2367,6 +2367,10 @@ p .alignnone {
     top: 25px;
   }
 }
+html {
+  margin-top: 0 !important;
+}
+
 header .site-logo {
   display: flex;
   justify-content: space-between;
@@ -2397,7 +2401,7 @@ header.fixed {
 }
 
 header + #site-content {
-  padding-top: 180px;
+  padding-top: 200px;
 }
 
 .homepage-headliner {
@@ -2571,6 +2575,26 @@ header .site-logo h2 {
   }
   header .site-logo form {
     width: 100%;
+  }
+
+  .deck-cards .posts-deck {
+    flex-wrap: wrap;
+  }
+  .deck-cards .featured {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .deck-cards .deck-list {
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .three-cards ul {
+    flex-wrap: wrap;
+  }
+  .three-cards ul li {
+    width: 100% !important;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 767px) {
